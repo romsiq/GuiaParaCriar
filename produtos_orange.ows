@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(139.0, 89.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Data Table" position="(311.0, 90.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="2" name="Distributions" position="(461.0, 90.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" title="Distributions" version="" />
+		<node id="3" name="Edit Domain" position="(351.0, 265.0)" project_name="Orange3" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" title="Edit Domain" version="" />
+		<node id="4" name="As Timeseries" position="(501.0, 265.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owtabletotimeseries.OWTableToTimeseries" title="As Timeseries" version="" />
+		<node id="5" name="Line Chart" position="(651.0, 265.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" title="Line Chart" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Data" sink_node_id="3" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="3" />
+		<link enabled="true" id="4" sink_channel="Time series" sink_node_id="5" source_channel="Time series" source_node_id="4" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('/Users/romsiq/Downloads/pedidos_produto.csv', {'encoding': 'utf-8', 'delimiter': ';', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/romsiq/Downloads/view_solicitacoes.csv', {'encoding': 'utf-8', 'delimiter': '|', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 46, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/romsiq/Downloads', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\xab\x00\x00\x00\xbc\x00\x00\x02\xf0\x00\x00\x02'\x00\x00\x02#\x00\x00\x01\x05\x00\x00\x03h\x00\x00\x02Z\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x01\xab\x00\x00\x00\xd2\x00\x00\x02\xf0\x00\x00\x02'", '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQ0IB2dDLAAMAAAAAAAAAAAAAAAAFnwAAA4MAAAAAAAAAKwAABZ8A
+AAOuAAAAAAAEAAAFoAAAAAAAAAAAAAAFnwAAA4NxB1gLAAAAc2VsZWN0X3Jvd3NxCIlYDQAAAHNl
+bGVjdGVkX2NvbHNxCV1xClgNAAAAc2VsZWN0ZWRfcm93c3ELXXEMWBUAAABzaG93X2F0dHJpYnV0
+ZV9sYWJlbHNxDYhYEgAAAHNob3dfZGlzdHJpYnV0aW9uc3EOiVgLAAAAX192ZXJzaW9uX19xD0sB
+WBAAAABjb250ZXh0X3NldHRpbmdzcRBdcRFjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNvbnRleHQK
+cRIpgXETfXEUKFgEAAAAdGltZXEVR0HXr6uUu3/kWAYAAAB2YWx1ZXNxFn1xF2gPSwFzWAoAAABh
+dHRyaWJ1dGVzcRh9cRlYEQAAAHF1YW50aWRhZGVfcGVkaWRvcRpLAnNYBQAAAG1ldGFzcRt9cRxY
+CwAAAGRhdGFfcGVkaWRvcR1LA3N1YmF1Lg==
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWAoAAABhdXRvX2FwcGx5cQGIWBIAAABjb250cm9sQXJlYVZpc2libGVxAohYEAAAAGN1
+bXVsYXRpdmVfZGlzdHJxA4lYEwAAAGZpdHRlZF9kaXN0cmlidXRpb25xBEsBWAkAAABoaWRlX2Jh
+cnNxBYlYDQAAAGtkZV9zbW9vdGhpbmdxBksKWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQdDQgHZ
+0MsAAwAAAAAAAAAAAAAAAAWfAAADgwAAAAAAAAAUAAAFnwAAA5cAAAAAAAQAAAWgAAAAAAAAAAAA
+AAWfAAADg3EIWAoAAABzaG93X3Byb2JzcQmJWA8AAABzdGFja2VkX2NvbHVtbnNxColYCwAAAF9f
+dmVyc2lvbl9fcQtLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EMXXENY29yYW5nZXdpZGdldC5zZXR0
+aW5ncwpDb250ZXh0CnEOKYFxD31xEChYBAAAAHRpbWVxEUdB16+sbu1261gGAAAAdmFsdWVzcRJ9
+cRMoWAQAAABjdmFycRRYCAAAAFNlbGVjdGVkcRVLZYZxFlgOAAAAbnVtYmVyX29mX2JpbnNxF0sA
+Sv7///+GcRhYCQAAAHNlbGVjdGlvbnEZY2J1aWx0aW5zCnNldApxGl1xG4VxHFJxHUr+////hnEe
+WAMAAAB2YXJxH1gRAAAAcXVhbnRpZGFkZV9wZWRpZG9xIEtmhnEhaAtLAXVYCgAAAGF0dHJpYnV0
+ZXNxIn1xIyhoIEsCaBVLAXVYBQAAAG1ldGFzcSR9cSVYCwAAAGRhdGFfcGVkaWRvcSZLA3N1YmF1
+Lg==
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkNCAdnQywADAAAAAAAAAAAAAAAABZ8AAAODAAAAAAAAACsAAAWfAAADrgAAAAAABAAABaAAAAAA
+AAAAAAAABZ8AAAODcQNYCwAAAF9fdmVyc2lvbl9fcQRLAlgQAAAAY29udGV4dF9zZXR0aW5nc3EF
+XXEGY29yYW5nZXdpZGdldC5zZXR0aW5ncwpDb250ZXh0CnEHKYFxCH1xCShYBAAAAHRpbWVxCkdB
+16+sd6N2uFgGAAAAdmFsdWVzcQt9cQwoWBQAAABfZG9tYWluX2NoYW5nZV9zdG9yZXENfXEOWAYA
+AABTdHJpbmdxD1gLAAAAZGF0YV9wZWRpZG9xECmGcRGGcRJdcRNYBgAAAEFzVGltZXEUKYZxFWFz
+Sv7///+GcRZYFgAAAF9tZXJnZV9kaWFsb2dfc2V0dGluZ3NxF31xGEr+////hnEZWA4AAABfc2Vs
+ZWN0ZWRfaXRlbXEaaBBLBIZxG0r+////hnEcaARLAnVYCgAAAGF0dHJpYnV0ZXNxHX1xHihYEQAA
+AHF1YW50aWRhZGVfcGVkaWRvcR9LAlgIAAAAU2VsZWN0ZWRxIEsBdVgFAAAAbWV0YXNxIX1xImgQ
+SwNzdWJhdS4=
+</properties>
+		<properties format="literal" node_id="4">{'autocommit': False, 'controlAreaVisible': True, 'radio_sequential': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x12\x00\x00\x014\x00\x00\x03w\x00\x00\x01\xf9\x00\x00\x02\x12\x00\x00\x01J\x00\x00\x03y\x00\x00\x01\xf9\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02\x12\x00\x00\x01J\x00\x00\x03w\x00\x00\x01\xf9', 'selected_attr': 'data_pedido', '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'attrs': {}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x9f\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00\x14\x00\x00\x05\x9f\x00\x00\x03\x97\x00\x00\x00\x00\x00\x04\x00\x00\x05\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x9f\x00\x00\x03\x83', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
